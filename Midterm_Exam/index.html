@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  
+  <title>Order Form</title>
+</head>
+
+<body class="bg-[#fffbeb]">
+
+
+  <header class="text-center">
+    <h1 class="text-amber-800 font-semibold text-xl ">Sweet Delights Bakery</h1>
+    <p class="text-amber-500 mt-1">Order Form</p>
+</header>
+
+  <form class="block p-6 rounded-lg shadow-md max-w-md mx-auto">
+    <div class="space-y-9">
+      <div class="border-b border-gray-900/10 pb-6">
+
+        <div class="text-amber-500 font-serif text-lg">Customer Information</div>
+
+        <div class="mt-4">
+          <label class="block text-sm font-medium text-black">Full name</label>
+          <div class="mt-1">
+            <input type="text" name="full-name" id="full-name"
+              class="block w-full rounded-lg border-gray-300 shadow-sm sm:text-sm" placeholder="">
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <label class="block text-sm font-medium text-black">Phone Number</label>
+          <div class="mt-1">
+            <input type="tel" name="phone-number" id="phone-number"
+              class="block w-full rounded-lg border-gray-300 shadow-sm sm:text-sm" placeholder="">
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <label class="block text-sm font-medium text-black">Address</label>
+          <div class="mt-1">
+            <input type="text" name="address" id="address"
+              class="block w-full rounded-lg border-gray-300 shadow-sm sm:text-sm" placeholder="">
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <label class="block text-lg font-serif text-amber-500">Select Your Items</label>
+
+          <div class="mt-2">  
+            <label for="Breads" class="block font-semibold">Breads</label>
+            <div>
+                <input type="checkbox" class="w-[12px] h-[12px] border-2 border-amber-500 rounded checked:bg-amber-500 mt-2">
+                <span class="ml-1 pr-9 text-sm">Sourdough Bread ($5.99)</span>
+                <input type="number" min="0" max="9" value="0" class="text-center text-sm border border-gray-400 rounded-md">
+                
+                <input type="checkbox" class="ml-1 w-[12px] h-[12px] border-2 border-amber-500 rounded checked:bg-amber-500 mt-2">
+                <span class="ml-1 pr-10 text-sm">French Baguette ($4.50)</span>
+                <input type="number" min="0" max="9" value="0" class="text-center text-sm border border-gray-400 rounded-md">
+            </div>
+  
+
+
+        <div class="mt-2">  
+          <label for="Breads" class="block font-semibold">Breads</label>
+          <div>
+              <input type="checkbox" class="w-[12px] h-[12px] border-2 border-amber-500 rounded checked:bg-amber-500 mt-2">
+              <span class="ml-1 pr-9 text-sm">Butter Croissant ($3.50)</span>
+              <input type="number" min="0" max="9" value="0" class="text-center text-sm border border-gray-400 rounded-md">
+              
+              <input type="checkbox" class="ml-1 w-[12px] h-[12px] border-2 border-amber-500 rounded checked:bg-amber-500 mt-2">
+              <span class="ml-1 pr-10 text-sm">Blueberry Muffin ($3.25)</span>
+              <input type="number" min="0" max="9" value="0" class="text-center text-sm border border-gray-400 rounded-md">
+          </div>
+
+
+
+          <div class="mt-2">  
+            <label for="Breads" class="block font-semibold">Breads</label>
+            <div>
+                <input type="checkbox" class="w-[12px] h-[12px] border-2 border-amber-500 rounded checked:bg-amber-500 mt-2">
+                <span class="ml-1 pr-9 text-sm">Chocolate Cake ($28.99)</span>
+                <input type="number" min="0" max="9" value="0" class="text-center text-sm border border-gray-400 rounded-md">
+                
+                <input type="checkbox" class="ml-1 w-[12px] h-[12px] border-2 border-amber-500 rounded checked:bg-amber-500 mt-2">
+                <span class="ml-1 pr-10 text-sm">Blueberry Muffin ($32.00)</span>
+                <input type="number" min="0" max="9" value="0" class="text-center text-sm border border-gray-400 rounded-md">
+            </div>
+  
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <div class="flex items-center justify-center mt-6">
+          <button type="submit" class="font-medium py-2 px-5 bg-amber-700 text-black rounded-full hover:bg-amber-700 focus:outline-2 focus:outline-offset-2 focus:outline-amber-900 active:bg-amber-800">Place Order</button>
+      </div>
+
+  </form>
+
+
+
+</body>
+
+
+
+</html>
