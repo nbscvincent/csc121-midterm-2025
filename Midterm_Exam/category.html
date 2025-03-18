@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  
+  <title>Add New Category</title>
+</head>
+
+<body class="bg-[#fffbeb]">
+
+
+<header class="text-center">    
+    <h1 class="text-amber-800 font-semibold text-xl ">Sweet Delights Bakery</h1>
+    <p class="text-amber-500 mt-1">Add New Category</p>
+</header>
+  <form class="block p-6 rounded-lg shadow-md max-w-md mx-auto">
+    <div class="space-y-9">
+      <div class="border-b border-gray-900/10 pb-6">
+
+        <div class="text-amber-500 font-serif text-lg">Category Details</div>
+
+        <div class="mt-4">
+          <label class="block text-sm font-medium text-black">Category name*</label>
+          <div class="mt-1">
+            <input type="text" name="full-name" id="full-name"
+              class="block w-full rounded-lg border-gray-300 shadow-sm sm:text-sm" placeholder="e.g. Breads, Pastries, Cakes">
+              <p class="text-sm text-gray-600 mt-1">This name will be displayed to customers</p>
+          </div>
+        </div>
+
+        <div class="mt-4">
+            <label class="block text-sm font-medium text-black">Category Description</label>
+            <div class="mt-1">
+              <textarea placeholder="Describe this category of bakery items..." class="block w-full rounded-lg border-gray-300 shadow-sm sm:text-sm  "></textarea>
+            </div>
+            <p class="text-sm text-gray-600">A brief description of this category</p>
+        </div>
+
+        <div class="mt-4">
+            <div class="text-amber-500 font-serif text-lg">Category Settings</div>
+
+            <div class="mt-2">
+                <label for="Status" class="block font-semibold">Status</label>
+                <input type="radio" name="status" value="active" class="appearance-none border-2 border-amber-500 rounded-full w-[14px] h-[14px] focus:ring-2 focus:ring-amber-500">
+                <span class="ml-1">Active</span>
+                <input type="radio" name="status" value="inactive" class="ml-6 appearance-none border-2 border-amber-500 rounded-full w-[14px] h-[14px] focus:ring-2 focus:ring-amber-500">
+                <span class="ml-1">Inactive</span>
+                <p class="text-sm text-gray-600">Draft categories are not visible to customers</p>
+            </div>
+            <div class="mt-2 mb-6">
+                <label for="fitem"></label>
+                <input type="checkbox" class="appearance-none w-[14px] h-[14px] border-2 border-amber-500 rounded checked:bg-amber-500">
+                <span class="ml-2">Featured Item</span>
+                <p class="text-sm text-gray-500 ml-6.5">Featured category are highlighted on the home page</p>
+            </div>
+            <hr class="border-x border-stone-300">
+            <div class="flex justify-between mt-4">
+                <button type="reset" class="font-semibold px-5 py-2 bg-gray-300 rounded-lg focus:outline-2 focus:outline-gray-400">Cancel</button>
+                <button type="submit" class="font-semibold px-5 py-2 bg-amber-900 text-white rounded-lg focus:outline-2 focus:outline-amber-500">Create Category</button>
+            </div>
+
+    </form>
+<footer>
+    <p class="text-center text-stone-800 text-sm mt-8">Sweet Delights Bakery © 2025</p>
+</footer>
+</body> 
+</html>
